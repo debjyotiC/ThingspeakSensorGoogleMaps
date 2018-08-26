@@ -18,9 +18,11 @@ def get_data():
   update_maps(data_str)
 
 def update_maps(src):
-  gmap = gmplot.GoogleMapPlotter(22.6199901,88.4239493, 13)
-  hidden_gem_lat, hidden_gem_lon = 22.6199901,88.4239493
-  gmap.marker(hidden_gem_lat, hidden_gem_lon,str(src))
+  lat = #desired latitude
+  lon = #desired longtitude 
+  gmap = gmplot.GoogleMapPlotter(lat,lon, 13)
+  hidden_gem_lat, hidden_gem_lon = lat,lon
+  gmap.marker(hidden_gem_lat, hidden_gem_lon,src)
   gmap.draw("my_map.html")
 
 def main():
