@@ -4,8 +4,8 @@ import json
 import time
 
 
-READ_API_KEY = 'VDGD8FE4VCJ841F8'
-CHANNEL_ID = 556128
+READ_API_KEY = ''
+CHANNEL_ID = 
 
 # get data from cloud
 def get_data():
