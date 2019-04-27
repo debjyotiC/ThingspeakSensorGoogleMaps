@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 969px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 22.5146298, lng: 88.4160477};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+   var marker = new google.maps.Marker({title: 'The sensor val: 7', position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8vMJFml8r1638L2p4Pyow9DdpsfrvaZ8&callback=initMap">
+    </script>
+  </body>
+</html>
