@@ -47,7 +47,7 @@ def read_value():
     * The callback parameter executes the initMap() function
     -->
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8vMJFml8r1638L2p4Pyow9DdpsfrvaZ8&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
     </script>
   </body>
 </html>""" % temp
